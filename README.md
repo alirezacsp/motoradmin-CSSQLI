@@ -7,7 +7,7 @@ The motor-admin panel allows administrators to execute database queries.
 Queries are passed via the location.hash fragment in the URL like this (e.g., admin.com/queries/1#base64(query)),admin panel takes the value 
 from location.hash and executes it as a database query.
 he location.hash value is client-controlled, meaning an attacker can manipulate it.
-![Request and response][(https://github.com/alirezacsp/Zero/blob/main/Picture10.png)
+![Request and response](https://github.com/alirezacsp/Zero/blob/main/Picture10.png)
 If the admin clicks a malicious link containing a crafted hash admin.com/queries/1#base64(execute database query), the admin panel might execute the attacker's query
 
 Sample:
