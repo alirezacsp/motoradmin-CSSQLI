@@ -9,14 +9,14 @@ from location.hash and executes it as a database query.
 he location.hash value is client-controlled, meaning an attacker can manipulate it.
 ![Request and response](https://github.com/alirezacsp/Zero/blob/main/Picture10.png)
 ![Request and response](https://github.com/alirezacsp/Zero/blob/main/Picture111.png)
-
+![Request and response](https://github.com/alirezacsp/Zero/blob/main/Picture12.png)
 If the admin clicks a malicious link containing a crafted hash admin.com/queries/1#base64(execute database query), the admin panel might execute the attacker's query
 
 Sample:
 http://localhost:3000/queries/1#eyJzcWxfYm9keSI6IlNFTEVDVCB2ZXJzaW9uKClcbiIsInByZWZlcmVuY2VzIjp7InF1ZXJ5X3R5cGUiOiJzcWwiLCJkYXRhYmFzZSI6IkRlZmF1bHQiLCJ2aXN1YWxpemF0aW9uIjoidmFsdWUiLCJ2aXN1YWxpemF0aW9uX29wdGlvbnMiOnt9LCJ2YXJpYWJsZXMiOltdfX0= 
 
 when admin open this url version() query will executed.
-
+![Request and response](https://github.com/alirezacsp/Zero/blob/main/Picture13.png)
 Consequences
 
 Privilege Escalation:
